@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { useState } from 'react';
 import fire from './config/Fire';
 import {NavLink} from 'react-router-dom';
 

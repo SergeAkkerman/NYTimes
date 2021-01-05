@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap");
+.App {
+  max-width: 1200px;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: white;
+}
+
+.App-logo {
+  width: 40%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Header {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1vw;
+}
+
+.Header div {
+  padding-top: 0.5-vw;
+}
+
+.Avatar {
+  height: 3vw;
+}
+
+.navbar-nav {
+  text-align: center;
+  background-color: rgba(100, 133, 144, 0.01);
+  position: absolute;
+  padding: 0;
+  z-index: 1;
+}
+
+.Login {
+  color: black;
+}
+
+.loginBtn {
+  position: relative;
+  background: none;
+  border: none;
+  font-family: Domine;
+  height: 2vw;
+  left: 30%;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  background: none;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ModalWindow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.Modal_content {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  width: 40%;
+  max-height: 90%;
+  font-family: Domine;
+  text-align: center;
+  color: black;
+}
+
+.ReactModalPortal {
+  position: relative;
+  z-index: 100;
+}
+
+.Modal_content img {
+  width: 90%;
+  border-radius: 1em;
+  max-height: 90%;
+  padding: 1em;
+}
+
+.Modal_content div {
+  padding: 0.5em;
+}
+
+.ArticlePage {
+  top: 5%;
+  width: 100%;
+  padding-top: 0px;
+  z-index: 2;
+}
+
+.ArticleTitle {
+  font-size: calc(100vw * 0.02);
+  font-family: Domine;
+}
+
+.ArticleInfo {
+  color: black;
+  font-size: calc(100vw * 0.01);
+  top: -50%;
+}
+
+.ContentRaw {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ContentRaw a:hover {
+  background-color: rgba(100, 133, 144, 0.01);
+  color: #ffe;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ArticleDiv {
+  position: relative;
+  text-align: center;
+  height: 15em;
+  width: 48%;
+  margin: 5px;
+  font-family: Domine;
+  color: blue;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  border-radius: 1em;
+}
+
+.textAlign {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-95%);
+  font-size: calc(100vw * 0.015);
+  background: rgba(0, 0, 0, 0.18);
+  padding: 0px;
+  width: 100%;
+}
+
+.Content {
+  position: relative;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 2000px) {
+  .textAlign .ArticleInfo .Login {
+    font-size: 1.5vw;
+  }
+
+  .GoogleImg {
+    max-height: 2vw;
+  }
+}
+@media (max-width: 1920px) {
+  .textAlign {
+    font-size: 1.56vw;
+  }
+
+  .Login {
+    font-size: 1.3vw;
+  }
+}
+@media (max-width: 1440px) {
+  .textAlign {
+    font-size: 1.8vw;
+  }
+
+  .Modal_content {
+    width: 55%;
+  }
+
+  .ArticleTitle {
+    font-size: 2.2vw;
+  }
+
+  .ArticleInfo {
+    font-size: 1.8vw;
+  }
+
+  .Login {
+    font-size: 1.6vw;
+  }
+
+  .GoogleImg {
+    max-height: 3vw;
+  }
+}
+@media (max-width: 1366px) {
+  .textAlign {
+    font-size: 1.9vw;
+  }
+}
+@media (max-width: 1280px) {
+  .textAlign {
+    font-size: 1vw;
+  }
+
+  .ArticleTitle {
+    font-size: 2.3vw;
+  }
+
+  .ArticleInfo {
+    font-size: 1.8vw;
+  }
+
+  .Login {
+    font-size: 1.9vw;
+  }
+
+  .GoogleImg {
+    max-height: 3.5vw;
+  }
+}
+@media (max-width: 1024px) {
+  .textAlign {
+    font-size: 2.5vw;
+  }
+
+  .Modal_content {
+    width: 70%;
+  }
+
+  .ArticleTitle {
+    font-size: 2.8vw;
+  }
+
+  .ArticleInfo {
+    font-size: 2.4vw;
+  }
+
+  .Login {
+    font-size: 1.6vw;
+  }
+
+  .GoogleImg {
+    max-height: 4vw;
+  }
+}
+@media (max-width: 850px) {
+  .textAlign {
+    background: none;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .ArticleDiv {
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+    background-size: 0%;
+    height: 8em;
+    width: 80%;
+    border-radius: 0;
+    margin: auto;
+    padding: auto;
+    top: 2em;
+  }
+
+  a {
+    color: black;
+    background: none;
+    text-decoration: none;
+  }
+
+  .ContentRaw {
+    display: block;
+  }
+
+  .Login {
+    font-size: 2.2vw;
+  }
+
+  .GoogleImg {
+    max-height: 4.5vw;
+  }
+}
+@media (max-width: 768px) {
+  .textAlign {
+    font-size: 2.9vw;
+  }
+
+  .ArticleDiv {
+    height: 7em;
+    top: 1em;
+  }
+
+  .Modal_content {
+    width: 75%;
+  }
+
+  .ArticleTitle {
+    font-size: 2.9vw;
+  }
+
+  .ArticleInfo {
+    font-size: 2.6vw;
+  }
+
+  .Login {
+    font-size: 1.9vw;
+  }
+
+  .GoogleImg {
+    max-height: 5vw;
+  }
+}
+@media (max-width: 600px) {
+  .textAlign {
+    font-size: 3vw;
+  }
+
+  .ArticleDiv {
+    height: 5em;
+    top: 1em;
+  }
+
+  .Modal_content {
+    width: 85%;
+  }
+
+  .ArticleTitle {
+    font-size: 4.2vw;
+  }
+
+  .ArticleInfo {
+    font-size: 3.6vw;
+  }
+
+  .Login {
+    font-size: 2.5vw;
+  }
+
+  .GoogleImg {
+    max-height: 6.5vw;
+  }
+}
+@media (max-width: 480px) {
+  .textAlign {
+    font-size: 3.1vw;
+  }
+
+  .Modal_content {
+    width: 90%;
+  }
+
+  .ArticleTitle {
+    font-size: 5vw;
+  }
+
+  .ArticleInfo {
+    font-size: 4.4vw;
+  }
+
+  .Login {
+    font-size: 2.1vw;
+  }
+
+  .GoogleImg {
+    max-height: 8vw;
+  }
+}
+@media (max-width: 320px) {
+  .textAlign {
+    font-size: 3.1vw;
+  }
+
+  .ArticleDiv {
+    height: 4em;
+    top: 1em;
+  }
+
+  .Modal_content {
+    width: 85%;
+  }
+
+  .ArticleTitle {
+    font-size: 5vw;
+  }
+
+  .ArticleInfo {
+    font-size: 4.5vw;
+  }
+
+  .GoogleImg {
+    max-height: 12vw;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

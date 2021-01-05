@@ -1,0 +1,65 @@
+.ArticlePage {
+  top: 5%;
+  width: 100%;
+  padding-top: 0px;
+  z-index: 2;
+}
+
+.ArticleTitle {
+font-size: calc(100vw * 0.02);
+
+font-family: Domine;
+}
+
+.ArticleInfo {
+color: black; 
+font-size: calc(100vw * 0.01);
+top: -50%;
+}
+
+.ContentRaw {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ContentRaw a:hover {
+  background-color: rgba(100, 133, 144, 0.010);
+  color: #ffe; 
+  cursor: pointer;
+  text-align: center;
+}
+
+.ArticleDiv {
+  position: relative;
+  text-align: center;
+  height: 15em;
+  width: 48%;
+  margin: 5px;
+  font-family: Domine;
+  color:blue;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  border-radius: 1em;
+}
+
+.textAlign {
+  position: absolute;
+  top:100%;
+  transform: translateY(-95%);
+  font-size: calc(100vw * 0.015);
+  background: rgba(0,0,0,0.18);
+  padding: 0px;
+  width: 100%; 
+}
+
+
+.Content {
+  position: relative;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+}

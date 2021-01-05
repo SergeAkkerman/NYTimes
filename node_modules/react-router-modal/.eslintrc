@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "flowtype"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/no-children-prop": "off"
+  }
+}

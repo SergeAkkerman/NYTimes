@@ -1,0 +1,45 @@
+.App-logo {
+  width: 40%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Header {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1vw;
+}
+
+.Header div {
+  padding-top: 0.5-vw;
+}
+
+
+.Avatar {
+  height: 3vw;
+}
+
+.navbar-nav {
+  text-align: center;
+  background-color: rgba(100, 133, 144, 0.010);
+  position: absolute;
+  padding: 0;
+  z-index: 1;
+}
+
+.Login {
+ color: black;
+}
+
+.loginBtn {
+  position: relative;
+  background: none;
+  border: none;
+  font-family: Domine;
+  height: 2vw;
+  left: 30%;
+
+}

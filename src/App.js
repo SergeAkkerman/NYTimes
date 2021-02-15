@@ -39,7 +39,7 @@ render() {
 return (
   <BrowserRouter>
   <MetaTags>
-  <title>NYT most popular articles</title>
+  <title>NYT top articles</title>
   <meta name="description" content="Last most viewed posts" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   </MetaTags>
@@ -60,5 +60,4 @@ return (
     );
   }
 }
-//comment from Acode
 export default App;
